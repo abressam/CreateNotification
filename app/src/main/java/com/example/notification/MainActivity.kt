@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showNotification() {
-        val intent = Intent(this, MainActivity::class.java).apply {
+        val intent = Intent(this, NotificationActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         }
 
@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
                 .bigText(getString(R.string.notification_text)))
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setContentIntent(pendingIntent)
+            // Remove the notification when the user taps it
             .setAutoCancel(true)
 
         with(NotificationManagerCompat.from(this)){

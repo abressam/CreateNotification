@@ -5,6 +5,7 @@ import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import android.graphics.BitmapFactory
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -36,7 +37,6 @@ class MainActivity : AppCompatActivity() {
                 .bigText(getString(R.string.notification_text)))
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setContentIntent(pendingIntent)
-            // Remove the notification when the user taps it
             .setAutoCancel(true)
 
         with(NotificationManagerCompat.from(this)){

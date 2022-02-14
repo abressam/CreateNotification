@@ -9,4 +9,6 @@
     </string>
     <string name="channel_name">First channel</string>
     <string name="channel_description">My first message</string>
+    <string name="your_message_text">Your Message</string>
+    <string name="back_text">Back</string>
 </resources>

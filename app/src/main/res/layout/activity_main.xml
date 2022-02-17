@@ -15,4 +15,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/permission_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/permission_text"
+        app:layout_constraintEnd_toEndOf="@+id/show_notification_btn"
+        app:layout_constraintStart_toStartOf="@+id/show_notification_btn"
+        app:layout_constraintTop_toBottomOf="@+id/show_notification_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
